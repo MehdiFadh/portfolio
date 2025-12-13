@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Actions Professionnelles - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Dev<span>Portfolio</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html" class="active">Mes actions pro</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Mes Actions <span>Professionnelles</span></h1>
+            <p>Découvrez mes expériences, stages et situations d'apprentissage.</p>
+        </div>
+    </header>
+
+    <section class="actions-nav">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-card">
+                    <div class="project-info" style="text-align: center; padding: 40px;">
+                        <i class="fas fa-briefcase"
+                            style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                        <h3>Expériences Professionnelles</h3>
+                        <p>Mes emplois et missions en entreprise.</p>
+                        <a href="experiences.html" class="btn-primary" style="margin-top: 20px;">Voir les détails</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="project-card">
+                    <div class="project-info" style="text-align: center; padding: 40px;">
+                        <i class="fas fa-laptop-code"
+                            style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                        <h3>Stages Professionnels</h3>
+                        <p>Mes périodes de stage en milieu professionnel.</p>
+                        <a href="stages.html" class="btn-primary" style="margin-top: 20px;">Voir les détails</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="project-card">
+                    <div class="project-info" style="text-align: center; padding: 40px;">
+                        <i class="fas fa-graduation-cap"
+                            style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                        <h3>Situations d'Apprentissage</h3>
+                        <p>Projets et travaux pratiques réalisés en formation (SAÉ).</p>
+                        <a href="situations.html" class="btn-primary" style="margin-top: 20px;">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Alexandre Dubois. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

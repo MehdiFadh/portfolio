@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Atouts - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Dev<span>Portfolio</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions pro</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="atouts.html" class="active">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Mes <span>Atouts</span></h1>
+            <p>Mes qualités personnelles et professionnelles.</p>
+        </div>
+    </header>
+
+    <section class="atouts">
+        <div class="container">
+            <div class="skills-grid">
+                <!-- Atout 1 -->
+                <div class="skill-card">
+                    <i class="fas fa-users" style="color: var(--accent-color);"></i>
+                    <h3>Travail d'équipe</h3>
+                    <p style="color: var(--text-secondary);">Capacité à collaborer efficacement, à écouter les autres et
+                        à partager mes connaissances.</p>
+                </div>
+                <!-- Atout 2 -->
+                <div class="skill-card">
+                    <i class="fas fa-lightbulb" style="color: var(--accent-color);"></i>
+                    <h3>Créativité</h3>
+                    <p style="color: var(--text-secondary);">Recherche de solutions innovantes et originales pour
+                        résoudre les problèmes.</p>
+                </div>
+                <!-- Atout 3 -->
+                <div class="skill-card">
+                    <i class="fas fa-clock" style="color: var(--accent-color);"></i>
+                    <h3>Organisation</h3>
+                    <p style="color: var(--text-secondary);">Gestion efficace du temps et des priorités pour respecter
+                        les délais.</p>
+                </div>
+                <!-- Atout 4 -->
+                <div class="skill-card">
+                    <i class="fas fa-search" style="color: var(--accent-color);"></i>
+                    <h3>Curiosité</h3>
+                    <p style="color: var(--text-secondary);">Soif d'apprendre et de découvrir de nouvelles technologies
+                        en permanence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Alexandre Dubois. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
