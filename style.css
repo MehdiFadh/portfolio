@@ -1375,3 +1375,97 @@ footer p {
         font-size: 1.1rem;
     }
 }
+
+/* Experiences Redesign */
+.experiences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--neon-glow);
+    border-color: var(--accent-color);
+}
+
+.experience-logo {
+    flex: 0 0 300px;
+    /* Increased width for logo area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.experience-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 180px;
+    /* Increased max-height */
+}
+
+.experience-logo i {
+    font-size: 4rem;
+    color: var(--bg-color);
+}
+
+.experience-details {
+    flex: 1;
+}
+
+.experience-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.experience-details h4 {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 600;
+}
+
+.experience-details p {
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-logo {
+        flex: 0 0 auto;
+        width: 150px;
+        margin: 0 auto;
+    }
+}
