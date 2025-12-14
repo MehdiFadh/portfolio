@@ -146,10 +146,11 @@ section {
 }
 
 .nav-links li {
-    margin: 0 20px;
+    margin: 0 12px;
 }
 
 .nav-links a {
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--text-secondary);
 }
@@ -1312,6 +1313,30 @@ footer p {
 
 .stage-section a:hover {
     color: var(--text-primary);
+}
+
+/* Experience Section (Critical Learnings) */
+.experience-section {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.experience-section h5 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.experience-section ul li {
+    margin-bottom: 5px;
+    color: var(--text-secondary);
 }
 
 /* Responsive Navigation Styles */

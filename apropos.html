@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qui suis-je ? - Portfolio</title>
-    <meta name="description" content="Portfolio d'un étudiant passionné par le développement web et l'informatique.">
+    <title>À Propos - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +21,8 @@
         <div class="container">
             <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Qui suis-je ?</a></li>
-                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html" class="active">À Propos</a></li>
                 <li><a href="formation.html">Ma formation</a></li>
                 <li class="dropdown">
                     <a href="actions.html">Mes actions professionnelles</a>
@@ -46,60 +45,64 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <span class="subtitle">Bonjour, je suis</span>
-                <h1>Mehdi FADHLOUNE</h1>
-                <h2 class="typing-text">Étudiant en <span>Informatique</span></h2>
-                <p>Actuellement en 3ème année de BUT Informatique en alternance. Passionné par le développement
-                    d'applications et les solutions logicielles.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn-primary">Me Contacter</a>
-                    <a href="#" class="btn-secondary">Télécharger mon CV</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="blob"></div>
-                <img src="assets/profile_placeholder.png" alt="Mehdi FADHLOUNE" id="profile-img">
-            </div>
-            <a href="#about" class="scroll-down">
-                <i class="fas fa-arrow-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <!-- About Section -->
-    <section class="about" id="about">
+    <header class="page-header">
         <div class="container">
-            <h2 class="section-title">Qui suis-je <span>?</span></h2>
+            <h1>À Propos de <span>Moi</span></h1>
+            <p>Mon profil personnel et mon état civil.</p>
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
             <div class="about-content">
                 <div class="about-img">
-                    <img src="assets/coding_setup.jpg" alt="Coding Setup">
+                    <img src="assets/profile_placeholder.png" alt="Mehdi FADHLOUNE">
                 </div>
                 <div class="about-text">
-                    <h3>Développeur en devenir</h3>
-                    <p>Étudiant en 3ème année de BUT Informatique à l'IUT d'Annecy, je poursuis actuellement ma
-                        formation en alternance chez Tétras. J'ai acquis de solides compétences en développement
-                        logiciel et web au cours de mes deux premières années d'études.</p>
-                    <p>Je suis passionné par la création d'applications utiles et performantes. Mon alternance me permet
-                        de mettre en pratique mes connaissances dans un environnement professionnel stimulant.</p>
+                    <h3>État Civil</h3>
+                    <p>Voici l'ensemble de mes informations personnelles.</p>
 
                     <div class="info-grid">
                         <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>Nom Complet</h4>
+                                <p>Mehdi FADHLOUNE</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <h4>Âge</h4>
+                                <p>21 ans</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <h4>Localisation</h4>
+                                <h4>Adresse</h4>
                                 <p>Annecy, France</p>
                             </div>
                         </div>
                         <div class="info-item">
-                            <i class="fas fa-university"></i>
+                            <i class="fas fa-phone"></i>
                             <div>
-                                <h4>Formation</h4>
-                                <p>BUT Informatique (Alternance)</p>
+                                <h4>Téléphone</h4>
+                                <p>06 00 00 00 00</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>mehdi.fadhloune@etu.univ-savoie.fr</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>Permis & Véhicule</h4>
+                                <p>Permis B, Véhiculé</p>
                             </div>
                         </div>
                     </div>
