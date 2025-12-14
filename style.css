@@ -126,6 +126,10 @@ section {
     align-items: center;
 }
 
+.navbar .btn-primary {
+    color: black;
+}
+
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
@@ -1471,7 +1475,9 @@ footer p {
         width: 150px;
         margin: 0 auto;
     }
-}/* Scroll Down Arrow */
+}
+
+/* Scroll Down Arrow */
 .scroll-down {
     position: absolute;
     bottom: 30px;
