@@ -1511,3 +1511,175 @@ footer p {
         transform: translateY(-5px) translateX(-50%);
     }
 }
+
+/* Competence Accordion Styles */
+
+.accordion-header {
+    background-color: var(--card-bg);
+    padding: 20px 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+    /* Allows wrapping on small screens */
+}
+
+.accordion-header:hover {
+    border-color: var(--accent-color);
+    background-color: var(--bg-secondary);
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-item.active .accordion-header {
+    border-color: var(--accent-color);
+    background-color: var(--bg-secondary);
+    border-radius: 10px 10px 0 0;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-primary);
+}
+
+.skill-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-left: auto;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    color: var(--accent-color);
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: var(--bg-secondary);
+    border-radius: 0 0 10px 10px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 2000px;
+    /* Large enough for content */
+    padding: 25px;
+    transition: max-height 0.5s ease-in;
+}
+
+/* Detailed Competence Listing */
+
+.level-block {
+    margin-bottom: 25px;
+    border-left: 2px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+.level-block:last-child {
+    margin-bottom: 0;
+}
+
+.level-title {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.ac-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ac-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.ac-code {
+    font-family: 'Space Mono', monospace;
+    /* Monospace for alignment */
+    font-weight: 700;
+    color: var(--text-primary);
+    background-color: rgba(56, 189, 248, 0.1);
+    /* Subtle accent bg */
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 15px;
+    min-width: 80px;
+    /* Fixed width for alignment */
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.ac-desc {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.ac-note {
+    font-style: italic;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+/* Responsive adjustments for competence list */
+@media (max-width: 768px) {
+    .accordion-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .skill-subtitle {
+        margin: 0;
+        margin-left: 45px;
+        /* Indent to align with text in H3 if possible, or just 0 */
+        font-size: 0.9rem;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .accordion-header h3 {
+        width: 90%;
+        /* Leave room for arrow */
+    }
+
+    .ac-item {
+        flex-direction: column;
+    }
+
+    .ac-code {
+        margin-bottom: 5px;
+    }
+}
