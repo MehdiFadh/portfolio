@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C2 - Optimiser (Niveau 3) - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C2 : <span>OPTIMISER</span></h1>
+            <p>Optimiser les applications informatiques (Niveau 3)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Anticipation et Profiling chez
+                    Thimon</h2>
+                <p style="margin-bottom: 20px;">
+                    L'application de gestion des pointages développée chez Thimon ne devait pas seulement fonctionner
+                    pour un utilisateur, mais être robuste face à une utilisation simultanée par l'ensemble du personnel
+                    administratif et supporter une accumulation de données sur plusieurs années. Le niveau 3 de la
+                    compétence <strong>OPTIMISER</strong> s'est traduit par une démarche proactive d'analyse de
+                    performance et d'anticipation.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Anticipation des Métriques et
+                    Montée en Charge (AC32.01)</h3>
+                <p style="margin-bottom: 20px;">
+                    Avant même le déploiement complet, j'ai dû anticiper l'évolution de la base de données. J'ai réalisé
+                    des calculs prévisionnels sur l'occupation disque (environ 200 pointages/jour * 365 jours * nombre
+                    d'années) pour valider que l'infrastructure serveur actuelle serait suffisante pour les 5 prochaines
+                    années sans dégradation des temps d'accès.
+                    J'ai également simulé une montée en charge lors de la clôture mensuelle de paie pour vérifier que le
+                    serveur HFSQL ne saturait pas la mémoire RAM lorsqu'il devait traiter en masse les données de tous
+                    les salariés.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Profiling et Analyse de
+                    Performances (AC32.02)</h3>
+                <p style="margin-bottom: 20px;">
+                    Lors des tests de charge, j'ai identifié une lenteur anormale sur le module de synchronisation des
+                    données. J'ai utilisé l'outil de <strong>Profiling</strong> intégré à Windev pour analyser
+                    l'exécution du code en temps réel.
+                    Le profileur a mis en évidence qu'une fonction de vérification d'intégrité était appelée inutilement
+                    à l'intérieur d'une boucle critique, consommant 80% du temps CPU. Cette analyse précise, chiffrée en
+                    millisecondes, m'a permis de justifier la refonte de cette partie du code.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 3 : Choix de Méthodes Dédiées
+                    (AC32.03)</h3>
+                <p style="margin-bottom: 20px;">
+                    Pour optimiser ces traitements lourds, j'ai choisi d'utiliser les fonctionnalités de
+                    <strong>Transactions SQL</strong> propres au domaine des bases de données relationnelles.
+                    Au lieu de commiter chaque insertion ligne par ligne (ce qui est très lent en E/S disque), j'ai
+                    regroupé les opérations dans des transactions par lots.
+                    Cette méthode dédiée au domaine des SGBD a permis de diviser par 5 le temps total de traitement lors
+                    des imports de données massifs.
+                </p>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

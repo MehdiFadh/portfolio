@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C2 - Optimiser - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C2 : <span>OPTIMISER</span></h1>
+            <p>Optimiser les applications informatiques (Niveau 1)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Algorithme de Calcul des Heures
+                    (Thimon)</h2>
+                <p style="margin-bottom: 20px;">
+                    Lors de mon alternance chez <strong>Thimon</strong>, le défi majeur de l'application de gestion des
+                    pointages n'était pas seulement de stocker les données, mais d'en extraire des informations fiables.
+                    La compétence <strong>OPTIMISER</strong> a été cruciale pour transformer des données brutes souvent
+                    incohérentes en relevés d'heures précis pour la paie.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Analyse du Problème (AC12.01)
+                </h3>
+                <p style="margin-bottom: 20px;">
+                    J'ai commencé par analyser les données générées par les pointeuses. Le problème était complexe : un
+                    employé peut pointer un nombre impair de fois (oubli de dépointage), travailler à cheval sur deux
+                    jours, ou revenir après une pause non prévue.
+                    Une approche naïve (simplement soustraire l'heure de fin à l'heure de début) aurait conduit à des
+                    erreurs massives. Il fallait donc <strong>analyser le problème avec méthode</strong> pour identifier
+                    tous les cas limites avant même d'écrire une ligne de code.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Choix et Conception de
+                    l'Algorithme (AC12.02)</h3>
+                <p style="margin-bottom: 20px;">
+                    J'ai dû <strong>comparer plusieurs approches algorithmiques</strong>.
+                    La première solution envisagée était de traiter les pointages séquentiellement à la volée.
+                    Cependant, cela rendait la correction d'erreurs difficile.
+                    J'ai opté pour un algorithme qui regroupe d'abord les pointages par journée, identifie les paires
+                    "Entrée/Sortie" valides, et signale les orphelins comme "Anomalies".
+                    L'algorithme devait également appliquer les règles de gestion spécifiques de l'entreprise (écrêtage
+                    des heures supplémentaires, déduction automatique des pauses déjeuner si non pointées).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 3 : Implémentation et Performance
+                </h3>
+                <p style="margin-bottom: 20px;">
+                    J'ai implémenté cet algorithme en <strong>W-Langage</strong>. L'optimisation ne portait pas
+                    seulement sur la justesse, mais aussi sur la performance.
+                    Le calcul mensuel pour l'ensemble des salariés représentait des milliers d'enregistrements. En
+                    utilisant des structures de données adaptées (tableaux associatifs en mémoire) plutôt que des
+                    requêtes SQL répétitives dans une boucle, j'ai réduit le temps de génération des rapports de
+                    plusieurs minutes à quelques secondes.
+                </p>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

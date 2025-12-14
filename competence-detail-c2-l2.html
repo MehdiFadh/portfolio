@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C2 - Optimiser (Niveau 2) - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C2 : <span>OPTIMISER</span></h1>
+            <p>Optimiser les applications informatiques (Niveau 2)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Gestion de Parc Informatique
+                    (SAE 3.01)</h2>
+                <p style="margin-bottom: 20px;">
+                    Lors de la SAÉ 3.01, j'ai participé à la conception et au développement d'une application web de
+                    gestion de parc informatique en PHP/MySQL. Au-delà du développement fonctionnel, ce projet
+                    nécessitait une réflexion approfondie sur la structure des données pour garantir la cohérence et la
+                    performance lors de l'interrogation d'un grand nombre d'équipements.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Choix des Structures de Données
+                    (AC22.01)</h3>
+                <p style="margin-bottom: 20px;">
+                    Le premier défi était de modéliser les relations complexes entre les tickets d'incidents, les
+                    utilisateurs et les différents types de matériel (PC, Imprimantes, Serveurs).
+                    Pour éviter la redondance et les anomalies de mise à jour, j'ai appliqué les règles de normalisation
+                    (3NF) à notre base de données relationnelle.
+                    J'ai choisi d'utiliser des tables de jointure pour les relations "Many-to-Many" (ex: un logiciel
+                    peut être installé sur plusieurs postes, et un poste a plusieurs logiciels), ce qui nous a permis de
+                    structurer les données de manière optimale pour les futures évolutions.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Techniques Algorithmiques et
+                    Optimisation (AC22.02)</h3>
+                <p style="margin-bottom: 20px;">
+                    Pour la recherche de matériel, nous avons été confrontés à des temps de réponse qui augmentaient
+                    avec le volume de données.
+                    J'ai mis en place des techniques avancées comme l'ajout d'index sur les colonnes fréquemment
+                    recherchées (numéro de série, nom d'utilisateur).
+                    Côté code, j'ai implémenté un système de pagination côté serveur (LIMIT/OFFSET en SQL) plutôt que de
+                    récupérer tous les enregistrements pour les filtrer en PHP, réduisant drastiquement l'empreinte
+                    mémoire du script.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 3 : Optimisation de Code Existant
+                    (AC22.03)</h3>
+                <p style="margin-bottom: 20px;">
+                    Nous avons repris une partie du code existant qui souffrait du problème "N+1 queries" (une requête
+                    pour la liste, puis une requête par élément pour récupérer les détails).
+                    J'ai refactorisé ces sections en utilisant des jointures SQL (INNER JOIN / LEFT JOIN) pour récupérer
+                    toutes les informations nécessaires en une seule requête optimisée.
+                    Cette analyse et cette réécriture ont permis de diviser par 10 le nombre de requêtes envoyées à la
+                    base de données sur la page d'accueil du tableau de bord.
+                </p>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

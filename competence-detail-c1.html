@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C1 - Réaliser - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C1 : <span>RÉALISER</span></h1>
+            <p>Développer des applications informatiques (Niveau 1)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Application de Gestion des
+                    Pointages (Thimon)</h2>
+                <p style="margin-bottom: 20px;">
+                    Dans le cadre de mon alternance chez <strong>Thimon</strong>, j'ai eu pour mission principale de
+                    développer une application complète de gestion des pointages et des demandes d'absence pour les
+                    salariés. Ce projet m'a permis de mettre en œuvre la compétence <strong>RÉALISER</strong> dans un
+                    contexte professionnel réel.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Analyse des besoins et Prise en
+                    main</h3>
+                <p style="margin-bottom: 20px;">
+                    Le projet a débuté par une phase d'analyse. Il fallait comprendre les besoins du service RH : suivre
+                    les heures d'arrivée et de départ, gérer les congés payés et les RTT, et automatiser les calculs
+                    mensuels.
+                    J'ai dû me familiariser avec l'environnement technique imposé : <strong>Windev</strong> et le SGBD
+                    <strong>HFSQL</strong>. Cette étape a nécessité d'étudier la documentation et de réaliser des
+                    prototypes simples (AC11.01) pour valider la faisabilité des fonctionnalités demandées.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Conception et Développement de
+                    l'Interface</h3>
+                <p style="margin-bottom: 20px;">
+                    Une fois les besoins clarifiés, j'ai entamé la phase de conception. L'objectif était de créer une
+                    interface intuitive pour que les employés puissent pointer rapidement.
+                    J'ai conçu des maquettes d'écrans (AC11.02) avant de les implémenter. L'interface comprend un
+                    tableau de bord pour l'utilisateur (solde de congés, historique) et un module d'administration pour
+                    les RH.
+                    Le développement m'a amené à créer des composants graphiques interactifs (boutons, calendriers) et à
+                    gérer les événements utilisateurs (clics, validation de formulaires) pour offrir une expérience
+                    fluide (AC11.04).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 3 : Logique Métier et Base de
+                    Données</h3>
+                <p style="margin-bottom: 20px;">
+                    Derrière l'interface, j'ai développé toute la logique de traitement. Cela impliquait la connexion à
+                    la base de données HFSQL pour stocker les pointages en temps réel.
+                    J'ai écrit des algorithmes pour calculer automatiquement la durée de travail journalière et alerter
+                    en cas d'anomalie. Cette rigueur dans le code a été essentielle pour assurer la fiabilité des
+                    données de paie.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 4 : Tests et Déploiement</h3>
+                <p style="margin-bottom: 20px;">
+                    Avant la mise en production, j'ai réalisé une phase de tests unitaires et fonctionnels (AC11.03).
+                    J'ai simulé différents scénarios (oubli de pointage, congés chevauchant des week-ends) pour corriger
+                    les bugs.
+                    L'application a ensuite été déployée sur le serveur Windows de l'entreprise et est aujourd'hui
+                    utilisée quotidiennement par l'équipe.
+                </p>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

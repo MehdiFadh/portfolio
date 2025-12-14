@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Vinotrip - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html" class="active">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Projet <span>Vinotrip</span></h1>
+            <p>Plateforme de réservation de séjours oenotouristiques (SAÉ 4.01)</p>
+        </div>
+    </header>
+
+    <section class="project-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">À propos du projet</h2>
+                <p style="margin-bottom: 20px;">
+                    **Vinotrip** est un projet web réalisé en équipe dans le cadre de la SAÉ 4.01. L'objectif était de
+                    concevoir et développer une plateforme complète permettant aux amateurs de vin de découvrir et
+                    réserver des séjours oenologiques dans les plus belles régions viticoles.
+                </p>
+                <p style="margin-bottom: 30px;">
+                    Ce projet nous a permis de mettre en pratique l'architecture MVC avec le framework Laravel, la
+                    gestion de base de données relationnelle complexe, et le travail collaboratif avec Git.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Fonctionnalités Clés</h3>
+                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 30px; color: var(--text-secondary);">
+                    <li><strong>Catalogue de séjours :</strong> Recherche filtrée par région, type de vin, et budget.
+                    </li>
+                    <li><strong>Panier et Réservation :</strong> Gestion complète du tunnel de commande.</li>
+                    <li><strong>Espace Client :</strong> Historique des réservations et gestion du profil.</li>
+                    <li><strong>Back-Office Administrateur :</strong> Interface CRUD pour gérer les séjours, les
+                        partenaires et les utilisateurs.</li>
+                </ul>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Technologies Utilisées</h3>
+                <div class="tags" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;">
+                    <span class="tech-tag"
+                        style="background: rgba(255, 45, 32, 0.1); color: #ff2d20; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Laravel</span>
+                    <span class="tech-tag"
+                        style="background: rgba(119, 123, 179, 0.1); color: #777bb3; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">PHP</span>
+                    <span class="tech-tag"
+                        style="background: rgba(0, 117, 143, 0.1); color: #00758f; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">MySQL</span>
+                    <span class="tech-tag"
+                        style="background: rgba(227, 76, 38, 0.1); color: #e34c26; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">HTML5/CSS3</span>
+                </div>
+
+                <div style="margin-bottom: 40px; text-align: center;">
+                    <a href="https://github.com/MehdiFadh/Vinotrip" class="btn-primary" target="_blank"><i
+                            class="fab fa-github"></i> Voir le code sur GitHub</a>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Galerie du projet</h2>
+                <div class="project-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/vinotrip.png" alt="Vinotrip Accueil">
+                        <p
+                            style="text-align: center; margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">
+                            Page d'accueil immersive</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/vinotrip2.png" alt="Vinotrip Détail Séjour">
+                        <p
+                            style="text-align: center; margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">
+                            Détail d'un séjour oenologique</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 50px; text-align: center;">
+                    <a href="situations.html" class="btn-secondary">Retour aux projets</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
