@@ -92,19 +92,16 @@ document.addEventListener('DOMContentLoaded', () => {
     accordionHeaders.forEach(header => {
         header.addEventListener('click', () => {
             const accordionItem = header.parentElement;
-            const accordionContent = accordionItem.querySelector('.accordion-content');
-
-            // Toggle active class
-            accordionItem.classList.toggle('active');
-
-            // Close other accordion items (optional, for "one open at a time" behavior)
-            /*
+            
+            // Close other accordion items
             accordionHeaders.forEach(otherHeader => {
                 if (otherHeader !== header) {
                     otherHeader.parentElement.classList.remove('active');
                 }
             });
-            */
+
+            // Toggle active class
+            accordionItem.classList.toggle('active');
         });
     });
 });
