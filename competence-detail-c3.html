@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C3 - Administrer - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C3 : <span>ADMINISTRER</span></h1>
+            <p>Administrer des systèmes informatiques communicants (Niveau 1)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Installation d'un Poste de
+                    Travail Linux (SAÉ)</h2>
+                <p style="margin-bottom: 20px;">
+                    Dans le cadre d'une Situation d'Apprentissage et d'Évaluation (SAÉ), j'ai réalisé l'installation
+                    complète et la configuration d'un poste de travail sous l'environnement Linux.
+                    Le choix s'est porté sur la distribution <strong>Ubuntu Mate 24 LTS</strong>, reconnue pour sa
+                    légèreté et sa stabilité. Ce projet m'a permis de valider le Niveau 1 de la compétence
+                    <strong>ADMINISTRER</strong>.
+                </p>
+
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="assets/UbuntuMate24LTS.png" alt="Installation Ubuntu Mate"
+                        style="max-width: 100%; border-radius: 10px; border: 1px solid var(--border-color);">
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Préparation et Installation
+                    (AC13.01 & AC13.03)</h3>
+                <p style="margin-bottom: 20px;">
+                    La première étape a consisté à identifier les composants matériels nécessaires et à préparer le
+                    support d'installation.
+                    J'ai dû créer une clé USB bootable avec l'ISO d'Ubuntu Mate 24 LTS.
+                    Lors de l'installation, j'ai procédé au partitionnement du disque dur, en séparant la racine (/) du
+                    dossier utilisateur (/home) pour faciliter les futures maintenances, et en configurant la partition
+                    de swap (AC13.01).
+                    J'ai ensuite finalisé l'installation en définissant les paramètres régionaux et en créant le compte
+                    administrateur principal (AC13.03).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Configuration et Prise en main
+                    (AC13.02)</h3>
+                <p style="margin-bottom: 20px;">
+                    Une fois le système installé, j'ai dû me familiariser avec l'environnement de bureau MATE et surtout
+                    avec l'utilisation du terminal, indispensable pour l'administration.
+                    J'ai effectué les mises à jour du système via les commandes <code>apt update</code> et
+                    <code>apt upgrade</code>.
+                    J'ai également appris à gérer les processus, à naviguer dans l'arborescence des fichiers en ligne de
+                    commande, et en gérer les droits d'accès aux fichiers (chmod, chown).
+                    Cette phase m'a permis de comprendre le fonctionnement d'un système d'exploitation multitâche et
+                    multi-utilisateurs (AC13.02).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 3 : Installation de logiciels et
+                    Personnalisation</h3>
+                <p style="margin-bottom: 20px;">
+                    Pour rendre le poste opérationnel pour le développement, j'ai installé divers outils via les dépôts
+                    officiels et des paquets externes (VS Code, Git, navigateurs).
+                    J'ai également configuré l'interface réseau pour assurer une connexion stable et sécurisée.
+                </p>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
