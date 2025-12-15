@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C4 - Gérer Niveau 1 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C4 : <span>GÉRER</span></h1>
+            <p>Gérer des données de l'information (Niveau 1)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Base de Données Vinotrip (SAÉ)
+                </h2>
+                <p style="margin-bottom: 20px;">
+                    Le projet <strong>Vinotrip</strong> consistait à développer une plateforme de réservation de séjours
+                    oenotouristiques.
+                    Un élément central de cette application était la gestion des données : utilisateurs, commandes,
+                    paniers et catalogue de séjours.
+                    Pour répondre à ce besoin, j'ai mis en place une base de données relationnelle robuste utilisant le
+                    SGBD <strong>PostgreSQL</strong>.
+                    Ce travail valide le Niveau 1 de la compétence <strong>GÉRER</strong>.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Conception et Mise en place
+                    (AC14.01)</h3>
+                <p style="margin-bottom: 20px;">
+                    La première étape a été de modéliser les données. J'ai réalisé le Modèle Conceptuel de Données (MCD)
+                    pour identifier les entités (Client, Séjour, Etape) et leurs relations.
+                    J'ai ensuite traduit ce modèle en Modèle Logique de Données (MLD), puis en script SQL de création.
+                    J'ai utilisé des commandes <code>CREATE TABLE</code> pour structurer la base, en définissant
+                    rigoureusement les clés primaires, les clés étrangères pour les liens entre tables, et les
+                    contraintes d'intégrité (AC14.01).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Exploitation des Données
+                    (AC14.02)</h3>
+                <p style="margin-bottom: 20px;">
+                    Pour rendre l'application fonctionnelle, j'ai dû écrire de nombreuses requêtes SQL.
+                    J'ai développé des requêtes pour :
+                <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-secondary);">
+                    <li>L'authentification des utilisateurs (SELECT avec clause WHERE).</li>
+                    <li>La recherche de séjours selon des critères (prix, région).</li>
+                    <li>La gestion du panier et la validation des commandes (INSERT, UPDATE).</li>
+                </ul>
+                L'utilisation de jointures (INNER JOIN, LEFT JOIN) a été essentielle pour rassembler les informations
+                dispersées dans plusieurs tables (ex: détails d'une commande avec infos client et séjour) (AC14.02).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Analyse et Retour d'Expérience</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div
+                        style="background-color: rgba(239, 68, 68, 0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(239, 68, 68, 0.3);">
+                        <h4 style="color: #fca5a5; margin-bottom: 10px;">Difficultés rencontrées</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                            La quantité de notions à assimiler en peu de temps (Normalisation, syntaxe SQL stricte) a
+                            rendu l'évaluation complexe.
+                        </p>
+                    </div>
+                    <div
+                        style="background-color: rgba(34, 197, 94, 0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(34, 197, 94, 0.3);">
+                        <h4 style="color: #86efac; margin-bottom: 10px;">Points de facilité</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                            Bonne compréhension intuitive des concepts de bases de données relationnelles et logique du
+                            langage SQL.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Ressources Mobilisées</h3>
+                <div class="tags-container" style="margin-bottom: 20px;">
+                    <span class="tech-tag">R1.05 - Intro BD & SQL</span>
+                    <span class="tech-tag">R1.06 - Mathématiques discrètes</span>
+                    <span class="tech-tag">R2.06 - Exploitation BD</span>
+                    <span class="tech-tag">R2.08 - Stats descriptives</span>
+                    <span class="tech-tag">R2.03 - Qualité de dev</span>
+                </div>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

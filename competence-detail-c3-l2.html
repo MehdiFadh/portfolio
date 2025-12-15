@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C3 - Administrer Niveau 2 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C3 : <span>ADMINISTRER</span></h1>
+            <p>Administrer des systèmes informatiques communicants (Niveau 2)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Déploiement de Services Réseaux
+                    et Sécurité (SAÉ)</h2>
+                <p style="margin-bottom: 20px;">
+                    Dans la continuité de mon parcours, j'ai réalisé un projet plus complexe consistant à déployer une
+                    infrastructure réseau complète basée sur Linux (Debian/Ubuntu Server).
+                    L'objectif était de fournir des services essentiels (DNS, DHCP, Web) tout en assurant la sécurité et
+                    la gestion des utilisateurs. Ce projet valide le Niveau 2 de la compétence
+                    <strong>ADMINISTRER</strong>.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Installation et Configuration
+                    des Services (AC23.01)</h3>
+                <p style="margin-bottom: 20px;">
+                    J'ai procédé à l'installation et à la configuration de plusieurs services réseaux critiques :
+                <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>DNS (Bind9)</strong> : Configuration des zones directes et inverses pour la résolution
+                        de noms interne.</li>
+                    <li><strong>DHCP (ISC-DHCP-Server)</strong> : Mise en place de l'attribution dynamique d'adresses IP
+                        avec réservations pour les serveurs.</li>
+                    <li><strong>Web (Apache/Nginx)</strong> : Déploiement d'un serveur web pour héberger des
+                        applications internes.</li>
+                </ul>
+                Cette étape a nécessité une compréhension fine des protocoles réseaux et des fichiers de configuration
+                spécifiques à chaque service (AC23.01).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Administration
+                    Multi-Utilisateurs (AC23.02)</h3>
+                <p style="margin-bottom: 20px;">
+                    Pour gérer efficacement les accès, j'ai mis en place une politique de gestion des utilisateurs
+                    stricte.
+                    J'ai créé différents groupes (Administrateurs, Développeurs, Utilisateurs) et attribué des droits
+                    d'accès spécifiques aux répertoires partagés en utilisant les commandes <code>chmod</code> et
+                    <code>chgrp</code>.
+                    J'ai également mis en place des scripts pour automatiser la création de comptes utilisateurs en lot,
+                    facilitant ainsi l'administration quotidienne (AC23.02).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 3 : Sécurisation du Système
+                    (AC23.03)</h3>
+                <p style="margin-bottom: 20px;">
+                    La sécurité étant primordiale, j'ai implémenté plusieurs mécanismes de protection :
+                <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Pare-feu (UFW)</strong> : Configuration pour n'autoriser que les ports strictement
+                        nécessaires (80, 443, 53, 22).</li>
+                    <li><strong>SSH</strong> : Sécurisation de l'accès distant en désactivant l'authentification par mot
+                        de passe au profit de l'authentification par clés publiques/privées.</li>
+                    <li><strong>HTTPS</strong> : Mise en place de certificats SSL (Let's Encrypt ou auto-signés) pour
+                        chiffrer les communications web.</li>
+                </ul>
+                Ces actions ont permis de durcir le système contre les tentatives d'intrusion (AC23.03).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Ressources Mobilisées</h3>
+                <div class="tags-container" style="margin-bottom: 20px;">
+                    <span class="tech-tag">R3.01 - Développement Web</span>
+                    <span class="tech-tag">R3.05 - Programmation Système</span>
+                    <span class="tech-tag">R3.09 - Cryptographie et sécurité</span>
+                    <span class="tech-tag">R3.13 - Communication professionnelle</span>
+                </div>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

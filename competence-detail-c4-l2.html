@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence C4 - Gérer Niveau 2 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mehdi <span>F</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Qui suis-je ?</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="formation.html">Ma formation</a></li>
+                <li class="dropdown">
+                    <a href="actions.html">Mes actions professionnelles</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="situations.html">Situations d'apprentissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="atouts.html">Atouts</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Compétence C4 : <span>GÉRER</span></h1>
+            <p>Gérer des données de l'information (Niveau 2)</p>
+        </div>
+    </header>
+
+    <section class="competence-detail" style="padding: 60px 0;">
+        <div class="container">
+
+            <div
+                style="background-color: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color);">
+
+                <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Évolution de la Base de Données
+                    Vinotrip</h2>
+                <p style="margin-bottom: 20px;">
+                    Suite à la mise en place initiale de la plateforme Vinotrip, il a fallu faire évoluer la base de
+                    données pour supporter la montée en charge et garantir une fiabilité irréprochable.
+                    Ce projet d'évolution s'est concentré sur l'optimisation des performances et le renforcement de la
+                    cohérence des données, validant ainsi le Niveau 2 de la compétence <strong>GÉRER</strong>.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Optimisation des Performances
+                    (AC24.01)</h3>
+                <p style="margin-bottom: 20px;">
+                    Avec l'augmentation du volume de données, certaines requêtes devenaient lentes. J'ai utilisé l'outil
+                    <code>EXPLAIN ANALYZE</code> pour identifier les goulots d'étranglement.
+                    J'ai ensuite créé des <strong>index</strong> pertinents sur les colonnes fréquemment utilisées dans
+                    les clauses de recherche (ex: prix du séjour, id_region) pour accélérer drastiquement les temps de
+                    réponse.
+                    J'ai également mis en place des <strong>Vues (Views)</strong> pour simplifier l'accès aux données
+                    complexes (ex: vue consolidation des commandes avec totaux) sans pénaliser les performances
+                    (AC24.01).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Intégrité et Qualité des Données
+                    (AC24.02)</h3>
+                <p style="margin-bottom: 20px;">
+                    Pour garantir la qualité des données, j'ai implémenté des mécanismes avancés :
+                <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Triggers</strong> : Automatisation de la mise à jour des stocks de séjours lors de la
+                        validation d'une commande.</li>
+                    <li><strong>Transactions</strong> : Utilisation des blocs <code>BEGIN...COMMIT/ROLLBACK</code> pour
+                        assurer que toutes les opérations d'une commande (paiement, décrémentation stock, email)
+                        réussissent ou échouent ensemble, évitant les données orphelines.</li>
+                    <li><strong>Contraintes</strong> : Renforcement des contraintes CHECK pour valider les données en
+                        amont (ex: prix > 0).</li>
+                </ul>
+                Enfin, j'ai travaillé sur la conformité <strong>RGPD</strong> en m'assurant que les données sensibles
+                (mots de passe) soient chiffrées et que la durée de conservation des données personnelles soit respectée
+                (AC24.02).
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Analyse et Retour d'Expérience</h3>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div
+                        style="background-color: rgba(56, 189, 248, 0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(56, 189, 248, 0.3);">
+                        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Axes d'amélioration</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                            J'aurais souhaité un meilleur accompagnement sur les aspects avancés de la sécurisation des
+                            données, un domaine vaste et critique.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Ressources Mobilisées</h3>
+                <div class="tags-container" style="margin-bottom: 20px;">
+                    <span class="tech-tag">R3.01 - Développement web</span>
+                    <span class="tech-tag">R3.08 - Probabilités (Analyse de données)</span>
+                    <span class="tech-tag">R3.09 - Cryptographie et sécurité</span>
+                    <span class="tech-tag">R4.06 - Communication interne</span>
+                    <span class="tech-tag">R3.11 - Droit du numérique</span>
+                </div>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="competences.html" class="btn-secondary">Retour aux compétences</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehdi FADHLOUNE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
