@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétence C2 - Optimiser (Niveau 2) - Portfolio</title>
+    <title>Compétence C6 - Collaborer (Niveau 1) - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,8 +47,8 @@
 
     <header class="page-header">
         <div class="container">
-            <h1>Compétence C2 : <span>OPTIMISER</span></h1>
-            <p>Optimiser les applications informatiques (Niveau 2)</p>
+            <h1>Compétence C6 : <span>COLLABORER</span></h1>
+            <p>Travailler dans une équipe informatique (Niveau 1)</p>
         </div>
     </header>
 
@@ -60,47 +60,33 @@
 
                 <h2 style="color: var(--accent-color); margin-bottom: 30px;">Contexte : Projet Vinotrip (SAÉ 4.01)</h2>
                 <p style="margin-bottom: 20px;">
-                    Dans le cadre de la SAÉ 4.01, j'ai participé au développement de l'application web Vinotrip, une
-                    plateforme de réservation de séjours oenotouristiques.
-                    Ce projet d'envergure nécessitait une conception rigoureuse et des choix techniques réfléchis pour
-                    garantir la performance et la sécurité de l'application.
+                    Le projet Vinotrip a été réalisé par une équipe de 4 étudiants. La réussite de ce projet reposait
+                    autant sur nos compétences techniques individuelles que sur notre capacité à collaborer efficacement
+                    pour livrer un produit cohérent.
                 </p>
 
                 <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 40px 0;">
 
-                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Structures de Données Complexes
-                    (AC22.01)</h3>
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 1 : Travailler efficacement en
+                    équipe (AC16.01)</h3>
                 <p style="margin-bottom: 20px;">
-                    Avant même de commencer le développement, nous avons dû structurer les données de manière optimale.
-                    En partant du dictionnaire de données, nous avons élaboré le **Modèle Conceptuel de Données (MCD)**
-                    pour identifier les entités (Séjours, Partenaires, Clients) et leurs relations.
-                    Nous avons ensuite traduit ce modèle en **Modèle Logique de Données (MLD)**, en veillant à respecter
-                    les formes normales pour éviter la redondance et garantir l'intégrité des données lors de la
-                    création de la base de données relationnelle.
+                    Pour synchroniser notre travail, nous avons utilisé Git avec une stratégie de branches (une
+                    branche par fonctionnalité, fusion sur "dev" après validation).
+                    Nous avions une répartition claire des tâches basée sur les compétences de chacun (Back-end,
+                    Front-end, Base de données), tout en nous entraidant lors des blocages techniques.
+                    La revue de code (Code Review) était systématique avant chaque merge pour garantir la qualité du
+                    code.
                 </p>
 
-                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Algorithmes Avancés et Sécurité
-                    (AC22.02)</h3>
+                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 2 : Communiquer avec les différents
+                    acteurs (AC16.02)</h3>
                 <p style="margin-bottom: 20px;">
-                    La sécurité des données utilisateurs était une priorité, notamment pour le stockage des mots de
-                    passe.
-                    Il est impératif de ne jamais stocker les mots de passe en clair. J'ai donc mis en œuvre un
-                    algorithme de hachage robuste (comme Bcrypt) avant l'insertion en base de données.
-                    Ce processus transforme le mot de passe en une chaîne de caractères incompréhensible et
-                    irréversible, protégeant ainsi les comptes utilisateurs même en cas de compromission de la base de
-                    données.
-                </p>
-
-                <h3 style="color: var(--text-primary); margin-bottom: 15px;">Partie 3 : Analyse et Optimisation de Code
-                    (AC22.03)</h3>
-                <p style="margin-bottom: 20px;">
-                    L'utilisation du framework Laravel et de son ORM Eloquent nous a permis d'optimiser nos interactions
-                    avec la base de données.
-                    J'ai notamment travaillé sur l'optimisation des requêtes via le mécanisme de "Eager Loading"
-                    (chargement impatient) pour résoudre le problème du "N+1".
-                    Au lieu d'exécuter une requête supplémentaire pour chaque séjour afin de récupérer ses étapes, nous
-                    chargeons toutes les données nécessaires en un nombre minimal de requêtes optimisées, réduisant
-                    ainsi considérablement le temps de chargement des pages.
+                    La communication au sein de l'équipe passait par un serveur Discord dédié pour les échanges
+                    instantanés et par des réunions quotidiennes (Daily Scrums) pour faire le point sur
+                    l'avancement.
+                    Vis-à-vis du "client" (notre professeur), nous avons tenu des réunions formelles de suivi (Sprint
+                    Reviews) pour présenter les fonctionnalités développées et recueillir ses retours, adaptant ainsi
+                    notre direction en continu.
                 </p>
 
                 <div style="margin-top: 40px; text-align: center;">
